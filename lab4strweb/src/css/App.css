@@ -1,0 +1,88 @@
+/* Заголовок и навигация */
+.App-header {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+  height: 40px;
+}
+
+/* Название приложения */
+.App-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-right: 2rem;
+  flex-shrink: 0; /* Фиксированная ширина для названия */
+}
+
+/* Навигация */
+nav {
+  flex-grow: 1; /* Занимает оставшееся пространство между названием и правой частью */
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Равномерное распределение пунктов по ширине */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Распределяет пункты на всю ширину */
+}
+
+nav ul li {
+  margin: 0;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Блок аутентификации */
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Отступы между именем пользователя и кнопкой */
+}
+
+.auth-section span {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.logout-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #d62828;
+}
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Высота страницы */
+  text-align: center; /* Выравнивание текста */
+}

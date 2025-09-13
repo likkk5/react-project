@@ -1,0 +1,144 @@
+/* Общий стиль страницы панели управления */
+.dashboard-page {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px; /* Ограничение по ширине */
+  background-color: #f7f9fc; /* Светлый фон */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для выделения */
+  border-radius: 10px; /* Скругленные углы */
+  min-height: 90vh; /* Минимальная высота страницы */
+  margin-top: 10px; /* Отступ сверху */
+  font-family: Arial, sans-serif; /* Шрифт */
+}
+
+/* Заголовок страницы */
+.dashboard-page h1 {
+  text-align: center;
+  font-size: 2rem; /* Размер шрифта */
+  color: #2c3e50; /* Темный, но не черный цвет */
+  margin-bottom: 1.5rem; /* Отступ снизу */
+}
+
+/* Стиль для приветственного текста */
+.dashboard-page p {
+  text-align: center;
+  font-size: 1.25rem; /* Размер шрифта для описания */
+  color: #555; /* Более светлый цвет текста */
+}
+
+/* Стиль для сообщения о необходимости входа */
+.login-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff6347; /* Красно-оранжевый цвет для акцента */
+  font-weight: bold;
+  background-color: #fff3e0; /* Светлый бежевый фон */
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ff6347;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Карта */
+.map-container {
+  height: 400px;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Блок погоды */
+.weather {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.weather h2 {
+  margin-top: 0;
+  color: #3498db; /* Синий цвет заголовка */
+}
+
+.weather-info p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 5px 0;
+  color: #555;
+}
+
+.weather-info strong {
+  color: #333; /* Более контрастный текст */
+}
+
+/* Список автомобилей */
+.cars {
+  background-color: #ffffff; /* Белый фон */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cars h2 {
+  color: #e67e22; /* Оранжевый цвет заголовка */
+  margin-bottom: 10px;
+}
+
+.car-list {
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+  margin: 0;
+}
+
+.car-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-item:last-child {
+  border-bottom: none;
+}
+
+.car-item strong {
+  color: #2c3e50; /* Темный текст */
+}
+
+.car-item span {
+  color: #777; /* Более светлый текст для года */
+  font-size: 0.9rem;
+}
+
+/* Дополнительные эффекты */
+.weather-info p,
+.car-item {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.car-item:hover {
+  background-color: #f7f7f7; /* Светлый фон при наведении */
+  transform: scale(1.02); /* Увеличение при наведении */
+}
+
+.weather-info p:hover {
+  background-color: #eaf6ff; /* Светло-синий фон для строки */
+}
+/* Стиль для даты и времени */
+.current-date {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.data-dates {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #555;
+}
+

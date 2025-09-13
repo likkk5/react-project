@@ -1,0 +1,81 @@
+/* Основной контейнер страницы с деталями продукта */
+.product-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f7f9fc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 90vh;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Заголовок продукта */
+  .product-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Изображение продукта */
+  .product-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Описание продукта */
+  .product-details p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Подсветка для заголовков полей */
+  .product-details p strong {
+    color: #222;
+  }
+  /* Контейнер для информации о продукте */
+.product-info-box {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Отступы между элементами внутри бокса */
+  .product-info-box p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #444;
+  }
+  
+  /* Стили для заголовков полей внутри бокса */
+  .product-info-box p strong {
+    color: #222;
+    font-weight: bold;
+  }
+  
+  /* Добавление адаптивности */
+  @media (max-width: 600px) {
+    .product-details {
+      padding: 10px;
+    }
+  
+    .product-details h1 {
+      font-size: 2em;
+    }
+  
+    .product-details p {
+      font-size: 1em;
+    }
+  }
+  

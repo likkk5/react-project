@@ -1,0 +1,180 @@
+/* Основной контейнер */
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f7f9fc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 90vh;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Заголовок */
+  .product-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Поиск и сортировка */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-bar input[type="text"],
+  .filter-bar select,
+  .filter-bar button {
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .filter-bar button {
+    background-color: #ffdc30;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #dec018;
+  }
+  
+  /* Форма добавления продукта */
+  .add-product-form {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-product-form input {
+    width: calc(100% - 1rem);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-product-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .add-product-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Список продуктов */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Карточка продукта */
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Кнопка редактирования */
+  .edit-button {
+    background-color: #007BFF; /* Синий цвет */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
+  }
+  
+  /* Кнопка удаления */
+  .delete-button {
+    background-color: #e63946; /* Красный цвет */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d62828; /* Темно-красный при наведении */
+  }
+  .details-button{
+    background-color: #ffdc30; /* Красный цвет */
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  .details-button:hover {
+    background-color: #dec018; /* Темно-красный при наведении */
+  }
+  /* Сообщение загрузки */
+  .loading-message {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  /* Сообщение об ошибке */
+  .error-message {
+    text-align: center;
+    color: red;
+    font-size: 1.25rem;
+  }
+  

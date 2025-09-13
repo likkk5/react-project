@@ -1,0 +1,135 @@
+/* Основной контейнер для страницы */
+.users-page {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+    background-color: #f7f9fc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 90vh;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Заголовок */
+  .users-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Поиск и сортировка */
+  .search-sort-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .search-sort-controls input,
+  .search-sort-controls select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+  .search-sort-controls button {
+    background-color: #ffdc30;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-sort-controls button:hover {
+    background-color: #dec018;
+  }
+  /* Список пользователей */
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Карточка пользователя */
+  .user-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .user-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Кнопки */
+  .user-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .user-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Удалить кнопку */
+  .user-card button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .user-card button:last-child:hover {
+    background-color: #b02a37;
+  }
+  
+  /* Добавить пользователя */
+  .user-form {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .user-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-form button {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-form button:hover {
+    background-color: #218838;
+  }
+  

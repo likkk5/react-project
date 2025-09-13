@@ -1,0 +1,69 @@
+/* Основной контейнер для страницы входа */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Карточка формы входа */
+  .login-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Заголовок */
+  .login-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Поля ввода */
+  .login-card input[type="email"],
+  .login-card input[type="password"] {
+    width: 90%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Кнопка входа */
+  .login-card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ссылки */
+  .login-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .login-card a:hover {
+    text-decoration: underline;
+  }
+  
